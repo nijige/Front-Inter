@@ -1,4 +1,5 @@
-import {CardContainer} from './styles'
+import {CardContainer} from './styles';
+
 
 interface CardProps {
     width?: string,
@@ -7,15 +8,12 @@ interface CardProps {
     noShadow?: boolean
 }
 
-
-
- const Card = ({
+const Card = ({
     children,
     width='100%',
     height='auto',
-    noShadow=false,
-
- }:CardProps) => {
+    noShadow = false,
+    }: CardProps) => {
     return (
         <CardContainer width={width} height={height} noShadow={noShadow}>
             {children}
@@ -23,4 +21,4 @@ interface CardProps {
     )
 }
 
-export default Card
+export default Card;
